@@ -19,33 +19,34 @@
 
 <body>
     <!-- Navigace -->
-    <!-- Blue with white text -->
     <nav class="navbar navbar-expand-md bg-primary navbar-dark">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Úvod</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="mapa.html">Mapa</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="historie.html">Historie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cisla.html">Čísla</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Již brzy</a>
-            </li>
-        </ul>
-        <form class="form-inline" action="/action_page.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-success" type="submit">Search</button>
-        </form>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="mapa.html">Mapa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="historie.html">Historie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Čísla</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Již brzy</a>
+                </li>
+            </ul>
+        </div>
+        <!--<form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>-->
     </nav>
 
     <main>
