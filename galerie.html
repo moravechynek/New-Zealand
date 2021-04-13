@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nový Zéland</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        .rada {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+        .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+        }
+        .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        }
+        @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        }
+        @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigace -->
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Úvod</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mapa.html">Mapa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="historie.html">Historie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Čísla</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="galerie.html">Galerie</a>
+            </li>
+        </ul>
+        <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main>
+        <div class="rada">
+            <div class="column">
+              <img src="img/lotr.jpg" alt="Pán Prstenů">
+              <img src="img/allBlacks.jpg" alt="All Blacks">
+              <img src="img/sheep.jpg" alt="Ovce">
+              <img src="img/whale.jpg" alt="Kosatka">
+              <img src="img/surfing.jfif" alt="Surfař">
+            </div>
+            <div class="column">
+                <img src="img/kangaro.jpg" alt="Klokan">
+                <img src="img/kiwi.jpg" alt="Pták Kiwi">
+                <img src="img/lizzard.jpg" alt="Ještěrka">
+                <img src="img/owl.jpg" alt="Sova">
+                <img src="img/penguin.jpg" alt="Tučnáci">
+                <img src="img/seaLions.jpg" alt="Lachtani">
+            </div>
+            <div class="column">
+                <img src="img/apples.jfif" alt="Jablka">
+                <img src="img/greenKiwi.jfif" alt="Ovoce kiwi">
+                <img src="img/river.jfif" alt="Řeka">
+                <img src="img/river2.jfif" alt="Řeka">
+                <img src="img/mountains.jfif" alt="Hory">
+                <img src="img/beach.webp" alt="Pláž s jeskyní">
+            </div>
+            <div class="column">
+                <img src="img/staraMapa.png" alt="Stará mapa Nového Zélandu">
+                <img src="img/newzealand_physical_map.gif" alt="Zeměpisná mapa Nového Zélandu">
+                <img src="img/political-map.gif" alt="Politická mapa Nového Zélandu">
+            </div>
+    </main>
+</body>
+
+</html>
