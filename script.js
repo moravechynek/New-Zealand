@@ -62,126 +62,131 @@ $(document).ready(function(){
   });
   // mapa
   $("#manawatu_wanganui").mouseover(function(){
-    $("#manawatu_wanganui").attr("fill","green");
+    $("#manawatu_wanganui").attr("fill","rgb(1, 33, 105)");
   });
   $("#manawatu_wanganui").mouseout(function(){
     $("#manawatu_wanganui").attr("fill","#7c7c7c");
   });
   $("#gisborne_district").mouseover(function(){
-    $("#gisborne_district").attr("fill","green");
+    $("#gisborne_district").attr("fill","rgb(1, 33, 105)");
   });
   $("#gisborne_district").mouseout(function(){
     $("#gisborne_district").attr("fill","#7c7c7c");
   });
   $("#hawkes_bay").mouseover(function(){
-    $("#hawkes_bay").attr("fill","green");
+    $("#hawkes_bay").attr("fill","rgb(1, 33, 105)");
   });
   $("#hawkes_bay").mouseout(function(){
     $("#hawkes_bay").attr("fill","#7c7c7c");
   });
   $("#auckland").mouseover(function(){
-    $("#auckland").attr("fill","green");
+    $("#auckland").attr("fill","rgb(1, 33, 105)");
   });
   $("#auckland").mouseout(function(){
     $("#auckland").attr("fill","#7c7c7c");
   });
   $("#bay_of_plenty").mouseover(function(){
-    $("#bay_of_plenty").attr("fill","green");
+    $("#bay_of_plenty").attr("fill","rgb(1, 33, 105)");
   });
   $("#bay_of_plenty").mouseout(function(){
     $("#bay_of_plenty").attr("fill","#7c7c7c");
   });
   $("#canterbury").mouseover(function(){
-    $("#canterbury").attr("fill","green");
+    $("#canterbury").attr("fill","rgb(1, 33, 105)");
   });
   $("#canterbury").mouseout(function(){
     $("#canterbury").attr("fill","#7c7c7c");
   });
   $("#marlborough_district").mouseover(function(){
-    $("#marlborough_district").attr("fill","green");
+    $("#marlborough_district").attr("fill","rgb(1, 33, 105)");
   });
   $("#marlborough_district").mouseout(function(){
     $("#marlborough_district").attr("fill","#7c7c7c");
   });
   $("#nelson_city").mouseover(function(){
-    $("#nelson_city").attr("fill","green");
+    $("#nelson_city").attr("fill","rgb(1, 33, 105)");
   });
   $("#nelson_city").mouseout(function(){
     $("#nelson_city").attr("fill","#7c7c7c");
   });
   $("#tasman_district").mouseover(function(){
-    $("#tasman_district").attr("fill","green");
+    $("#tasman_district").attr("fill","rgb(1, 33, 105)");
   });
   $("#tasman_district").mouseout(function(){
     $("#tasman_district").attr("fill","#7c7c7c");
   });
   $("#northland").mouseover(function(){
-    $("#northland").attr("fill","green");
+    $("#northland").attr("fill","rgb(1, 33, 105)");
   });
   $("#northland").mouseout(function(){
     $("#northland").attr("fill","#7c7c7c");
   });
   $("#taranaki").mouseover(function(){
-    $("#taranaki").attr("fill","green");
+    $("#taranaki").attr("fill","rgb(1, 33, 105)");
   });
   $("#taranaki").mouseout(function(){
     $("#taranaki").attr("fill","#7c7c7c");
   });
   $("#west_coast").mouseover(function(){
-    $("#west_coast").attr("fill","green");
+    $("#west_coast").attr("fill","rgb(1, 33, 105)");
   });
   $("#west_coast").mouseout(function(){
     $("#west_coast").attr("fill","#7c7c7c");
   });
   $("#otago").mouseover(function(){
-    $("#otago").attr("fill","green");
+    $("#otago").attr("fill","rgb(1, 33, 105)");
   });
   $("#otago").mouseout(function(){
     $("#otago").attr("fill","#7c7c7c");
   });
   $("#southland").mouseover(function(){
-    $("#southland").attr("fill","green");
+    $("#southland").attr("fill","rgb(1, 33, 105)");
   });
   $("#southland").mouseout(function(){
     $("#southland").attr("fill","#7c7c7c");
   });
   $("#waikato").mouseover(function(){
-    $("#waikato").attr("fill","green");
+    $("#waikato").attr("fill","rgb(1, 33, 105)");
   });
   $("#waikato").mouseout(function(){
     $("#waikato").attr("fill","#7c7c7c");
   });
   $("#wellington").mouseover(function(){
-    $("#wellington").attr("fill","green");
+    $("#wellington").attr("fill","rgb(1, 33, 105)");
   });
   $("#wellington").mouseout(function(){
     $("#wellington").attr("fill","#7c7c7c");
   });
 // ggggggggg
   $("#three_kings_islands").mouseover(function(){
-    $("#three_kings_islands").attr("fill","green");
+    $("#three_kings_islands").attr("fill","rgb(1, 33, 105)");
   });
   $("#three_kings_islands").mouseout(function(){
     $("#three_kings_islands").attr("fill","#7c7c7c");
   });
   $("#antiopodes_islands").mouseover(function(){
-    $("#antiopodes_islands").attr("fill","green");
+    $("#antiopodes_islands").attr("fill","rgb(1, 33, 105)");
   });
   $("#antiopodes_islands").mouseout(function(){
     $("#antiopodes_islands").attr("fill","#7c7c7c");
   });
   $("#campbell_islands").mouseover(function(){
-    $("#campbell_islands").attr("fill","green");
+    $("#campbell_islands").attr("fill","rgb(1, 33, 105)");
   });
   $("#campbell_islands").mouseout(function(){
     $("#campbell_islands").attr("fill","#7c7c7c");
   });
   $("#auckland_islands").mouseover(function(){
-    $("#auckland_islands").attr("fill","green");
+    $("#auckland_islands").attr("fill","rgb(1, 33, 105)");
   });
   $("#auckland_islands").mouseout(function(){
     $("#auckland_islands").attr("fill","#7c7c7c");
   });
+  /*
+    $("p").mouseenter(function(){
+    $(this).hide();
+  });
+  */
   /*$("#0").mouseover(function(){
     $("#0").attr("fill","blue")
   });*/

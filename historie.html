@@ -24,10 +24,17 @@
         body {
             background-image: url('img/staraMapa.png');
         }
-        #historie1,#historie2,#historie3,#historie4,#historie5,#historie6 {
+
+        #historie1,
+        #historie2,
+        #historie3,
+        #historie4,
+        #historie5,
+        #historie6 {
             background-color: white;
         }
-        p{
+
+        p {
             text-indent: 30px;
         }
     </style>
@@ -36,7 +43,7 @@
 <body>
     <header>
         <!-- Navigace -->
-        <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -68,138 +75,431 @@
     </header>
 
     <main>
+        <div class="container-fluid">
+            <!-- 1 -->
+            <link title="timeline-styles" rel="stylesheet"
+                href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+            <!-- 2 -->
+            <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+            <div id='timeline-embed' style="width: 100%; height: 600px"></div>
+
+            <!-- 3 -->
+            <script type="text/javascript">
+                var timeline_json = {
+                    "events": [{
+                        "media": {
+                            "url": "img/historie/Maori-People.jpg",
+                            "alt": "Maoři",
+                            "link": "#historie1",
+                            "link_target": "_self",
+                            "thumbnail": "img/icons/branch.png"
+                        },
+                        "start_date": {
+                            "year": "100"
+                        },
+                        "end_date": {
+                            "year": "900"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Maorské osídlení</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/kupe.jfif",
+                            "alt": "Kupe",
+                            "link": "#historie1",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1000"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Kupe</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/kolonizace.jpg",
+                            "alt": "Velká migrace",
+                            "link": "#historie1",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1200"
+                        },
+                        "end_date": {
+                            "year": "1400"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Velká migrace</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/tasman.jpg",
+                            "alt": "Příchod Evropanů",
+                            "link": "#historie2",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1642"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Abel Tasman</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/cook.jfif",
+                            "alt": "James Cook",
+                            "link": "#historie2",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1769"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>James Cook</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/surville.jpg",
+                            "alt": "Jean de Surville",
+                            "link": "#historie2",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1772"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Jean de Surville</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/musketa.jfif",
+                            "alt": "Dovoz zbraní",
+                            "link": "#historie2",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1801"
+                        },
+                        "end_date": {
+                            "year": "1840"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Dovoz zbraní</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/smlouva.jpg",
+                            "alt": "Smlouva s Maory",
+                            "link": "#historie2",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1840"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Smlouva s Maory</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/ovce.jfif",
+                            "alt": "Dovoz ovcí",
+                            "link": "#historie3",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1850"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie3' target='_self' style='text-decoration:none;color: black;'>Dovoz ovcí</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/goldRush.jfif",
+                            "alt": "Zlatá horečka",
+                            "link": "#historie3",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1859"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie3' target='_self' style='text-decoration:none;color: black;'>Vypuknutí zlaté horečky</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/kate.jpg",
+                            "alt": "Kate Sheppard",
+                            "link": "#historie4",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1848",
+                            "month": "3",
+                            "day": "10"
+                        },
+                        "end_date": {
+                            "year": "1934",
+                            "month": "7",
+                            "day": "13"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie4' target='_self' style='text-decoration:none;color: black;'>Kate Sheppard</a>"
+                        }
+                    },
+                    {
+                        "media": {
+                            "url": "img/historie/prvni.jpg",
+                            "alt": "První světová válka",
+                            "link": "#historie5",
+                            "link_target": "_self"
+                        },
+                        "start_date": {
+                            "year": "1914",
+                            "month": "7",
+                            "day": "28"
+                        },
+                        "end_date": {
+                            "year": "1918",
+                            "month": "11",
+                            "day": "11"
+                        },
+                        "text": {
+                            "headline": "<a href='#historie5' target='_self' style='text-decoration:none;color: black;'>První světová válka</a>"
+                        }
+                    }]
+                };
+                window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+            </script>
+        </div>
         <div class="container">
             <div id="historie1" class="container">
                 <h3 class="text-center my-4">Maorské osídlení</h3>
-                <p>Člověk prvně osídlil území dnešního Nového Zélandu pravděpodobně kolem roku 100. Nejstarší stopy lidského
-                    působení archeologové nacházejí na Jižním ostrově. První lidé pravděpodobně připluli z Polynésie. Migrační
-                    vlna začala sílit v 9. století. Tito příchozí jsou dnes nazýváni Maoři a vytvořili si časem kolektivní
-                    identitu. Pojem Maor, neboli "lid moa", lze také přeložit jako "lovci ptáků moa". Třímetroví nelétaví ptáci
-                    moa se vyskytovali hojně právě na Novém Zélandu a byli téměř jediným zdrojem masa pro loveckou společnost,
+                <p>Člověk prvně osídlil území dnešního Nového Zélandu pravděpodobně kolem roku 100. Nejstarší stopy
+                    lidského
+                    působení archeologové nacházejí na Jižním ostrově. První lidé pravděpodobně připluli z Polynésie.
+                    Migrační
+                    vlna začala sílit v 9. století. Tito příchozí jsou dnes nazýváni Maoři a vytvořili si časem
+                    kolektivní
+                    identitu. Pojem Maor, neboli "lid moa", lze také přeložit jako "lovci ptáků moa". Třímetroví
+                    nelétaví ptáci
+                    moa se vyskytovali hojně právě na Novém Zélandu a byli téměř jediným zdrojem masa pro loveckou
+                    společnost,
                     neboť na ostrově téměř nežili savci. Kvůli tomu byli tito ptáci rychle vyhubeni.</p>
-                <p>Podle tradiční maorské legendy objevil souostroví mořeplavec Kupe v 10. století. Trvalejší a souvislejší
-                    osídlení však můžeme podle archeologů datovat až ve 12. století. Tehdy byl také osídlen i severní ostrov.
-                    Období 13. až 14. století historikové nazývají "Velkou migrací", neboť dochází k mohutnému osidlování
+                <p>Podle tradiční maorské legendy objevil souostroví mořeplavec Kupe v 10. století. Trvalejší a
+                    souvislejší
+                    osídlení však můžeme podle archeologů datovat až ve 12. století. Tehdy byl také osídlen i severní
+                    ostrov.
+                    Období 13. až 14. století historikové nazývají "Velkou migrací", neboť dochází k mohutnému
+                    osidlování
                     především ze Společenských ostrovů. Maorská společnost se stratifikuje a dosahuje úrovně vojenského
-                    náčelnictví. Maoři před příchodem Evropanů neznali zpracování kovů, jejich zbraně a nástroje byly ze dřeva a
+                    náčelnictví. Maoři před příchodem Evropanů neznali zpracování kovů, jejich zbraně a nástroje byly ze
+                    dřeva a
                     opracovaných kamenů.</p>
             </div>
             <div id="historie2" class="container">
-            <h3 class="text-center my-4">Příchod Evropanů</h3>
-            <p>Roku 1642 dorazil k novozélandským břehům Nizozemec Abel Tasman. Stanul u západního pobřeží Jižního ostrova.
-                Krátce po přistání Maoři zabili čtyři členy jeho posádky a Tasman nařídil se stáhnout a vrátit do Indonésie.
-            </p>
-            <p>Koloniální dějiny se počínají psát teprve v 18. století. Roku 1769 připlul k novozélandským břehům britský
-                námořník James Cook. Obeplul oba hlavní ostrovy a zakreslil je do mapy. Šlo o první mapu Nového Zélandu v
-                historii. Oba ostrovy pak Cook prohlásil za državu Spojeného království. I on se dostal do konfliktu s
-                Maory, ale s některými kmeny se mu naopak podařilo navázat přátelské vztahy.</p>
-            <p>Dva měsíce po Cookovi dorazila francouzská námořní výprava kapitána Jeana de Surville. Další francouzská
-                výprava, kapitána Mariona du Fresne, která připlula roku 1772, oba ostrovy prohlásila za državu
-                francouzského krále Ludvíka XV. Ke střetu s Brity o novou kolonii ovšem nedošlo, neboť dlouho nikoho
-                nelákalo území opravdu osidlovat.</p>
-            <p>Někdy na počátku 19. století byly na ostrovy dovezeny první střelné zbraně – muškety, což naprosto převrátilo
-                maorské dějiny a dalo následujícím čtyřiceti letům název „mušketové války“. Kmeny, které si muškety
-                pořídily, se vrhly na kmeny, které nebyly takto vyzbrojeny, a začaly je vyvražďovat. V letech 1801–1840 se
-                podle odhadů historiků uskutečnilo asi 600 válek mezi kmeny a bylo při nich zabito asi 40 000 Maorů.</p>
-            <p>Evropané mezitím pozvolna získávali populační i kulturní převahu. Kolem roku 1820 vznikly první evropské
-                osady v zálivu Bay of Islands a začaly rychle růst. V roce 1833 je začal spravovat oficiální zástupce
-                britské koruny James Busby. V roce 1838 byla založena Novozélandská kolonizační společnost a kolonizace
-                nabrala na obrátkách. Zároveň ale o Nový Zéland stále jevili zájem Francouzi.</p>
-            <p>Ve třicátých letech Maorové změnili strategii a hledali cestu ke sjednocení, aby se mohli postavit výzvě
-                nového osídlení. Jenže roku 1840 tvořili Maoři na Novém Zélandu již jen 12 procent populace. Nakonec si
-                maorské elity uvědomily, že nestojí před volbou zda kolonizace ano či ne, ale kterou kolonizaci zvolit – zda
-                britskou, nebo francouzskou. Francouze si vyhodnotili jako jednoznačně větší nebezpečí. Naopak s Brity se
-                jim jednalo mnohem lépe. Jednání vyvrcholila roku 1840. Tehdy se zástupci 500 kmenů dohodli s Brity na tom,
-                že se Evropané stanou vůdčí silou v oblasti a Nový Zéland bude spadat pod svrchovanost britské koruny,
-                výměnou za to měl zůstat nedotčen jejich majetek, lesy a voda. Historickou smlouvu zvanou Smlouva z Waitangi
-                podepsal s maorskými náčelníky roku 1840 kapitán William Hobson.</p>
+                <h3 class="text-center my-4">Příchod Evropanů</h3>
+                <p>Roku 1642 dorazil k novozélandským břehům Nizozemec Abel Tasman. Stanul u západního pobřeží Jižního
+                    ostrova.
+                    Krátce po přistání Maoři zabili čtyři členy jeho posádky a Tasman nařídil se stáhnout a vrátit do
+                    Indonésie.
+                </p>
+                <p>Koloniální dějiny se počínají psát teprve v 18. století. Roku 1769 připlul k novozélandským břehům
+                    britský
+                    námořník James Cook. Obeplul oba hlavní ostrovy a zakreslil je do mapy. Šlo o první mapu Nového
+                    Zélandu v
+                    historii. Oba ostrovy pak Cook prohlásil za državu Spojeného království. I on se dostal do konfliktu
+                    s
+                    Maory, ale s některými kmeny se mu naopak podařilo navázat přátelské vztahy.</p>
+                <p>Dva měsíce po Cookovi dorazila francouzská námořní výprava kapitána Jeana de Surville. Další
+                    francouzská
+                    výprava, kapitána Mariona du Fresne, která připlula roku 1772, oba ostrovy prohlásila za državu
+                    francouzského krále Ludvíka XV. Ke střetu s Brity o novou kolonii ovšem nedošlo, neboť dlouho nikoho
+                    nelákalo území opravdu osidlovat.</p>
+                <p>Někdy na počátku 19. století byly na ostrovy dovezeny první střelné zbraně – muškety, což naprosto
+                    převrátilo
+                    maorské dějiny a dalo následujícím čtyřiceti letům název „mušketové války“. Kmeny, které si muškety
+                    pořídily, se vrhly na kmeny, které nebyly takto vyzbrojeny, a začaly je vyvražďovat. V letech
+                    1801–1840 se
+                    podle odhadů historiků uskutečnilo asi 600 válek mezi kmeny a bylo při nich zabito asi 40 000 Maorů.
+                </p>
+                <p>Evropané mezitím pozvolna získávali populační i kulturní převahu. Kolem roku 1820 vznikly první
+                    evropské
+                    osady v zálivu Bay of Islands a začaly rychle růst. V roce 1833 je začal spravovat oficiální
+                    zástupce
+                    britské koruny James Busby. V roce 1838 byla založena Novozélandská kolonizační společnost a
+                    kolonizace
+                    nabrala na obrátkách. Zároveň ale o Nový Zéland stále jevili zájem Francouzi.</p>
+                <p>Ve třicátých letech Maorové změnili strategii a hledali cestu ke sjednocení, aby se mohli postavit
+                    výzvě
+                    nového osídlení. Jenže roku 1840 tvořili Maoři na Novém Zélandu již jen 12 procent populace. Nakonec
+                    si
+                    maorské elity uvědomily, že nestojí před volbou zda kolonizace ano či ne, ale kterou kolonizaci
+                    zvolit – zda
+                    britskou, nebo francouzskou. Francouze si vyhodnotili jako jednoznačně větší nebezpečí. Naopak s
+                    Brity se
+                    jim jednalo mnohem lépe. Jednání vyvrcholila roku 1840. Tehdy se zástupci 500 kmenů dohodli s Brity
+                    na tom,
+                    že se Evropané stanou vůdčí silou v oblasti a Nový Zéland bude spadat pod svrchovanost britské
+                    koruny,
+                    výměnou za to měl zůstat nedotčen jejich majetek, lesy a voda. Historickou smlouvu zvanou Smlouva z
+                    Waitangi
+                    podepsal s maorskými náčelníky roku 1840 kapitán William Hobson.</p>
             </div>
             <div id="historie3" class="container">
                 <h3 class="text-center my-4">Britská modernizace</h3>
-                <p>Britové v roce 1840 založili na Severním ostrově nové důležité centrum, město Wellington (později vyhlášené
-                    hlavním městem státu). Krátce po podepsání smlouvy z Waitangi vyhlásili Britové Nový Zéland závislým územím
-                    Nového Jižního Walesu (tedy Austrálie). Ale již roku 1841 byla podřízenost Austrálii zrušena a Nový Zéland
+                <p>Britové v roce 1840 založili na Severním ostrově nové důležité centrum, město Wellington (později
+                    vyhlášené
+                    hlavním městem státu). Krátce po podepsání smlouvy z Waitangi vyhlásili Britové Nový Zéland závislým
+                    územím
+                    Nového Jižního Walesu (tedy Austrálie). Ale již roku 1841 byla podřízenost Austrálii zrušena a Nový
+                    Zéland
                     byl prohlášen samostatnou britskou kolonií s vlastním guvernérem, jímž se stal William Hobson.</p>
-                <p>Kolonizace Nového Zélandu a Austrálie se dost lišily. Austrálie byla původně trestaneckou kolonií a první
+                <p>Kolonizace Nového Zélandu a Austrálie se dost lišily. Austrálie byla původně trestaneckou kolonií a
+                    první
                     zemědělští osadníci byli v domovské zemi spíše neúspěšní drobní rolníci z Anglie či Walesu. Typickým
-                    kolonizátorem Nového Zélandu byl spíše Skot, a to navíc spíše větší sedlák. Austrálie nicméně Nový Zéland
-                    silně ovlivnila, a to především masivním dovozem ovcí, který začal po roce 1850, a který dal novozélandskému
-                    zemědělství jasně vlnařský charakter. Někdy je také éra 1850–1880 na Novém Zélandu nazývána „epochou vlny“.
+                    kolonizátorem Nového Zélandu byl spíše Skot, a to navíc spíše větší sedlák. Austrálie nicméně Nový
+                    Zéland
+                    silně ovlivnila, a to především masivním dovozem ovcí, který začal po roce 1850, a který dal
+                    novozélandskému
+                    zemědělství jasně vlnařský charakter. Někdy je také éra 1850–1880 na Novém Zélandu nazývána „epochou
+                    vlny“.
                 </p>
-                <p>V roce 1852 britská koruna změnila status souostroví – ústavním zákonem získal autonomii. Vznikl (zákonem
-                    zvaným Constitution Act) vlastní novozélandský parlament (General Assembly) a rok 1852 je tak rokem vzniku
-                    novozélandské demokracie. Typickou událostí této epochy bylo rovněž vypuknutí „zlaté horečky“ na řece Buller
+                <p>V roce 1852 britská koruna změnila status souostroví – ústavním zákonem získal autonomii. Vznikl
+                    (zákonem
+                    zvaným Constitution Act) vlastní novozélandský parlament (General Assembly) a rok 1852 je tak rokem
+                    vzniku
+                    novozélandské demokracie. Typickou událostí této epochy bylo rovněž vypuknutí „zlaté horečky“ na
+                    řece Buller
                     v roce 1859.</p>
             </div>
             <div id="historie4" class="container">
                 <h3 class="text-center my-4">1860–1907: Války o půdu a rozvoj demokracie</h3>
-                <p>Roku 1860 vypukly boje mezi Maory a Evropany o půdu. Začaly v oblasti Taranaki. Tamní Maoři válku kolem roku
+                <p>Roku 1860 vypukly boje mezi Maory a Evropany o půdu. Začaly v oblasti Taranaki. Tamní Maoři válku
+                    kolem roku
                     1864 prohráli a následovala rozsáhlá "trestná" konfiskace půdy maorských kmenů. O její legitimitě se
-                    diskutuje dodnes. Novozélandská vláda se pokusila ukonejšit pocity frustrace Maorů mj. tím, že jim roku 1867
-                    přidělila čtyři křesla v parlamentu. Tyto čtyři zástupce pak volili všichni maorští muži starší 21 let bez
+                    diskutuje dodnes. Novozélandská vláda se pokusila ukonejšit pocity frustrace Maorů mj. tím, že jim
+                    roku 1867
+                    přidělila čtyři křesla v parlamentu. Tyto čtyři zástupce pak volili všichni maorští muži starší 21
+                    let bez
                     ohledu na výši majetku, zatímco na bílé voliče se majetkový cenzus dosud vztahoval.</p>
-                <p>Roku 1870 odešly ze země poslední jednotky britské armády. Tím se zvýšila nezávislost Nového Zélandu, ale
-                    také moc centrální vlády, v jejímž čele v té době stál Julius Vogel, první novozélandský premiér židovského
-                    původu. Jeho vláda zavedla celou řadu opatření, která se nelíbila provinciálním vládám. Rostoucí napětí
-                    vyřešil roku 1876 novozélandský parlament zrušením provincií. Proto byl Nový Zéland dlouho centralizovaným
+                <p>Roku 1870 odešly ze země poslední jednotky britské armády. Tím se zvýšila nezávislost Nového Zélandu,
+                    ale
+                    také moc centrální vlády, v jejímž čele v té době stál Julius Vogel, první novozélandský premiér
+                    židovského
+                    původu. Jeho vláda zavedla celou řadu opatření, která se nelíbila provinciálním vládám. Rostoucí
+                    napětí
+                    vyřešil roku 1876 novozélandský parlament zrušením provincií. Proto byl Nový Zéland dlouho
+                    centralizovaným
                     unitárním územím (až do reformy z roku 1989, která vytvořila šestnáct regionů).</p>
-                <p>Roku 1877 vláda ustavila národní systém vzdělávání, zaváděl povinnou školní docházku pro všechny děti bez
-                    rozdílu od 6 do 15 let, byl zcela nezávislý na jakékoli církvi a škola byla zdarma. V roce 1887 byl založen
-                    první národní park Tongariro. Roku 1891 volební právo získaly i ženy. Nový Zéland se tak stal vůbec prvním
-                    státem světa, který toto právo ženám přiznal. Boj za volební právo žen vedla především aktivistka Kate
-                    Sheppardová. V roce 1894 bylo reformováno pracovní právo a stát garantoval tzv. smírčí řízení, která pod
-                    jeho dozorem musely absolvovat odbory a zaměstnavatelé, pokud mezi nimi došlo v jednotlivých podnicích ke
-                    konfliktu. V roce 1898 pak byl zaveden důchodový systém. V 80. letech technologický pokrok změnil charakter
-                    novozélandského zemědělství. Skončila éra vlny, neboť farmáři se začali orientovat na produkci masa. Umožnil
+                <p>Roku 1877 vláda ustavila národní systém vzdělávání, zaváděl povinnou školní docházku pro všechny děti
+                    bez
+                    rozdílu od 6 do 15 let, byl zcela nezávislý na jakékoli církvi a škola byla zdarma. V roce 1887 byl
+                    založen
+                    první národní park Tongariro. Roku 1891 volební právo získaly i ženy. Nový Zéland se tak stal vůbec
+                    prvním
+                    státem světa, který toto právo ženám přiznal. Boj za volební právo žen vedla především aktivistka
+                    Kate
+                    Sheppardová. V roce 1894 bylo reformováno pracovní právo a stát garantoval tzv. smírčí řízení, která
+                    pod
+                    jeho dozorem musely absolvovat odbory a zaměstnavatelé, pokud mezi nimi došlo v jednotlivých
+                    podnicích ke
+                    konfliktu. V roce 1898 pak byl zaveden důchodový systém. V 80. letech technologický pokrok změnil
+                    charakter
+                    novozélandského zemědělství. Skončila éra vlny, neboť farmáři se začali orientovat na produkci masa.
+                    Umožnil
                     jim to vynález chladírenských boxů. Ty umožnily novozélandské maso vyvážet do Austrálie i jinam.</p>
             </div>
             <div id="historie5" class="container">
                 <h3 class="text-center my-4">Samostatnost</h3>
-                <p>V 90. letech vznikl systém politických stran. Nejvlivnější se stala v té době Liberální strana (vládla
-                    1891–1912). Ta nejprve roku 1901 odmítla vstoupit do Australské federace, aby následně začala usilovat o
-                    plnou nezávislost na Británii. Britská koruna se tomu nebránila a roku 1907 se Nový Zéland stal pouhým
-                    britským dominiem. 26. září 1907 Nový Zéland dnes považuje za datum vzniku státu. V hranicích z roku 1907
+                <p>V 90. letech vznikl systém politických stran. Nejvlivnější se stala v té době Liberální strana
+                    (vládla
+                    1891–1912). Ta nejprve roku 1901 odmítla vstoupit do Australské federace, aby následně začala
+                    usilovat o
+                    plnou nezávislost na Británii. Britská koruna se tomu nebránila a roku 1907 se Nový Zéland stal
+                    pouhým
+                    britským dominiem. 26. září 1907 Nový Zéland dnes považuje za datum vzniku státu. V hranicích z roku
+                    1907
                     existuje dodnes, jen roku 1962 se od něj odtrhla Západní Samoa.</p>
-                <p>Velký zásah do společnosti přinesla první světová válka. Té se Nový Zéland velmi aktivně zúčastnil na straně
-                    Dohody a zaplatil vysokou daň: Ve válce, kam narukovalo 100 000 Novozélanďanů, byl zabit nebo zraněn každý
-                    třetí mužský obyvatel Nového Zélandu ve věku 20-40 let. Další mrtvé si vyžádala poválečná epidemie španělské
-                    chřipky. K nejslavnějším angažmá novozélandské armády během první světové války patřila bitva o Gallipoli,
+                <p>Velký zásah do společnosti přinesla první světová válka. Té se Nový Zéland velmi aktivně zúčastnil na
+                    straně
+                    Dohody a zaplatil vysokou daň: Ve válce, kam narukovalo 100 000 Novozélanďanů, byl zabit nebo zraněn
+                    každý
+                    třetí mužský obyvatel Nového Zélandu ve věku 20-40 let. Další mrtvé si vyžádala poválečná epidemie
+                    španělské
+                    chřipky. K nejslavnějším angažmá novozélandské armády během první světové války patřila bitva o
+                    Gallipoli,
                     jež probíhala v letech 1915–1916.</p>
-                <p>Poválečný rozmach byl zbrzděn Velkou hospodářskou krizí z roku 1929. Nespokojenost ve společnosti v roce 1935
-                    poprvé v historii Nového Zélandu dostala k moci místní sociální demokracii - Novozélandskou stranu práce
-                    (New Zealand Labour Party). V čele vlády stanul Michael Joseph Savage. Jeho vláda ještě rozšířila síť
+                <p>Poválečný rozmach byl zbrzděn Velkou hospodářskou krizí z roku 1929. Nespokojenost ve společnosti v
+                    roce 1935
+                    poprvé v historii Nového Zélandu dostala k moci místní sociální demokracii - Novozélandskou stranu
+                    práce
+                    (New Zealand Labour Party). V čele vlády stanul Michael Joseph Savage. Jeho vláda ještě rozšířila
+                    síť
                     dosavadních sociálních opatření.</p>
             </div>
             <div id="historie6" class="container">
                 <h3 class="text-center my-4">Válka a konec britského vlivu</h3>
-                <p>Roku 1939 budování státu narušila druhá světová válka. Nový Zéland, jako člen Commonwealthu, znovu vstoupil
-                    do bojů po boku Británie. Vyslal na bojiště 120 000 vojáků. Jeho ztráty byly znovu enormní. Měl nejvíce
-                    mrtvých a zraněných na počet obyvatel ze všech bojujících států. Zároveň se - na rozdíl od první světové
-                    války - ocitlo v bezprostředním ohrožení i území Nového Zélandu, když začala hrozit invaze Japonců. Po celou
-                    dobu války střežilo novozélandské území americké námořnictvo, což založilo tradici velmi úzkých vazeb se
+                <p>Roku 1939 budování státu narušila druhá světová válka. Nový Zéland, jako člen Commonwealthu, znovu
+                    vstoupil
+                    do bojů po boku Británie. Vyslal na bojiště 120 000 vojáků. Jeho ztráty byly znovu enormní. Měl
+                    nejvíce
+                    mrtvých a zraněných na počet obyvatel ze všech bojujících států. Zároveň se - na rozdíl od první
+                    světové
+                    války - ocitlo v bezprostředním ohrožení i území Nového Zélandu, když začala hrozit invaze Japonců.
+                    Po celou
+                    dobu války střežilo novozélandské území americké námořnictvo, což založilo tradici velmi úzkých
+                    vazeb se
                     Spojenými státy.</p>
-                <p>V 2. polovině 20. století vazby s USA a Austrálií neustále posilovaly na úkor tradičních vazeb s Británií,
-                    jejichž pozůstatkem zůstalo vlastně již jen to, že formální hlavou státu je dosud britský monarcha. Klíčovým
-                    momentem byl vznik americko-australsko-novozélandské obranné aliance ANZUS v roce 1951. Nový Zéland se díky
-                    tomu zúčastnil i korejské a později vietnamské války. Americké nákupy vlny v 50. letech vyvolaly tzv.
+                <p>V 2. polovině 20. století vazby s USA a Austrálií neustále posilovaly na úkor tradičních vazeb s
+                    Británií,
+                    jejichž pozůstatkem zůstalo vlastně již jen to, že formální hlavou státu je dosud britský monarcha.
+                    Klíčovým
+                    momentem byl vznik americko-australsko-novozélandské obranné aliance ANZUS v roce 1951. Nový Zéland
+                    se díky
+                    tomu zúčastnil i korejské a později vietnamské války. Americké nákupy vlny v 50. letech vyvolaly
+                    tzv.
                     Novozélandský wool boom.</p>
-                <p>V roce 1965 Austrálie a Nový Zéland podepsaly dohodu o volném obchodu - New Zealand/Australia Free Trade
-                    Agreement (ještě prohloubená roku 1983 dohodou zvanou Closer Economic Relations). Další oslabení vztahů s
-                    Británií přišlo v roce 1973, když Spojené království vstoupilo do Evropské unie. Spolu s tím muselo přijmout
+                <p>V roce 1965 Austrálie a Nový Zéland podepsaly dohodu o volném obchodu - New Zealand/Australia Free
+                    Trade
+                    Agreement (ještě prohloubená roku 1983 dohodou zvanou Closer Economic Relations). Další oslabení
+                    vztahů s
+                    Británií přišlo v roce 1973, když Spojené království vstoupilo do Evropské unie. Spolu s tím muselo
+                    přijmout
                     i evropskou zemědělskou politiku a omezit tak zemědělský dovoz z Nového Zélandu. V souběhu s právě
-                    probíhající celosvětovou ropnou krizí to na Novém Zélandu vyvolalo hospodářskou recesi nebývalých rozměrů.
-                    Ta trvala hluboko do osmdesátých let. K moci vynesla roku 1973 Národní stranu Roberta Muldoona, která se
-                    pokusila krizi zvládnout protekcionismem a masivními vládními intervencemi do ekonomiky. Rozpočty kvůli tomu
-                    byly vysoce deficitní a rostlo zadlužení a brzy i inflace. Nezaměstnanost se nedařilo snižovat, což vedlo k
-                    velké vlně odchodu zvláště mladých do Austrálie. Navíc vzrostlo hnutí za práva Maorů, známé jako "maorská
+                    probíhající celosvětovou ropnou krizí to na Novém Zélandu vyvolalo hospodářskou recesi nebývalých
+                    rozměrů.
+                    Ta trvala hluboko do osmdesátých let. K moci vynesla roku 1973 Národní stranu Roberta Muldoona,
+                    která se
+                    pokusila krizi zvládnout protekcionismem a masivními vládními intervencemi do ekonomiky. Rozpočty
+                    kvůli tomu
+                    byly vysoce deficitní a rostlo zadlužení a brzy i inflace. Nezaměstnanost se nedařilo snižovat, což
+                    vedlo k
+                    velké vlně odchodu zvláště mladých do Austrálie. Navíc vzrostlo hnutí za práva Maorů, známé jako
+                    "maorská
                     renesance".</p>
-                <p>Národní strana ztratila moc roku 1984, na úkor labouristů. Ti vsadili na deregulační politiku: zrušení
+                <p>Národní strana ztratila moc roku 1984, na úkor labouristů. Ti vsadili na deregulační politiku:
+                    zrušení
                     zemědělských dotací, zrušení státní kontroly mezd a cen, snížení daní, masivní privatizace, zrušení
                     povinného členství v odborech (někdy se hovoří o vzniku "rogernomics", podle ministra financí Rogera
                     Douglase). Tato politika, která se zjevně inspirovala u Margaret Thatcherové a Ronalda Reagana, byla
-                    úspěšná. Bezjaderná zóna v novozélandských vodách, kterou roku 1984 vyhlásil sociálnědemokratický premiér
+                    úspěšná. Bezjaderná zóna v novozélandských vodách, kterou roku 1984 vyhlásil sociálnědemokratický
+                    premiér
                     David Lange, nicméně oslabila vazby se Spojenými státy.</p>
-                <p>Počátek 21. století je nadále ve znamení hospodářského rozvoje, oživeného i stále významnějším turistickým
+                <p>Počátek 21. století je nadále ve znamení hospodářského rozvoje, oživeného i stále významnějším
+                    turistickým
                     ruchem.</p>
             </div>
         </div>
