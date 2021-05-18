@@ -1,0 +1,16 @@
+{
+  "name": "NEW_ZEALAND",
+  "version": "1.0.0",
+  "description": "New Zealand",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "Hynek Moravec",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0"
+  }
+}

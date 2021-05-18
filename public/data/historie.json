@@ -1,0 +1,194 @@
+{
+    "events": [{
+        "media": {
+            "url": "img/historie/Maori-People.jpg",
+            "alt": "Maoři",
+            "link": "#historie1",
+            "link_target": "_self",
+            "thumbnail": "img/icons/branch.png"
+        },
+        "start_date": {
+            "year": "100"
+        },
+        "end_date": {
+            "year": "900"
+        },
+        "text": {
+            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Maorské osídlení</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/kupe.jfif",
+            "alt": "Kupe",
+            "link": "#historie1",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1000"
+        },
+        "text": {
+            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Kupe</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/kolonizace.jpg",
+            "alt": "Velká migrace",
+            "link": "#historie1",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1200"
+        },
+        "end_date": {
+            "year": "1400"
+        },
+        "text": {
+            "headline": "<a href='#historie1' target='_self' style='text-decoration:none;color: black;'>Velká migrace</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/tasman.jpg",
+            "alt": "Příchod Evropanů",
+            "link": "#historie2",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1642"
+        },
+        "text": {
+            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Abel Tasman</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/cook.jfif",
+            "alt": "James Cook",
+            "link": "#historie2",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1769"
+        },
+        "text": {
+            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>James Cook</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/surville.jpg",
+            "alt": "Jean de Surville",
+            "link": "#historie2",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1772"
+        },
+        "text": {
+            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Jean de Surville</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/musketa.jfif",
+            "alt": "Dovoz zbraní",
+            "link": "#historie2",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1801"
+        },
+        "end_date": {
+            "year": "1840"
+        },
+        "text": {
+            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Dovoz zbraní</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/smlouva.jpg",
+            "alt": "Smlouva s Maory",
+            "link": "#historie2",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1840"
+        },
+        "text": {
+            "headline": "<a href='#historie2' target='_self' style='text-decoration:none;color: black;'>Smlouva s Maory</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/ovce.jfif",
+            "alt": "Dovoz ovcí",
+            "link": "#historie3",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1850"
+        },
+        "text": {
+            "headline": "<a href='#historie3' target='_self' style='text-decoration:none;color: black;'>Dovoz ovcí</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/goldRush.jfif",
+            "alt": "Zlatá horečka",
+            "link": "#historie3",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1859"
+        },
+        "text": {
+            "headline": "<a href='#historie3' target='_self' style='text-decoration:none;color: black;'>Vypuknutí zlaté horečky</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/kate.jpg",
+            "alt": "Kate Sheppard",
+            "link": "#historie4",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1848",
+            "month": "3",
+            "day": "10"
+        },
+        "end_date": {
+            "year": "1934",
+            "month": "7",
+            "day": "13"
+        },
+        "text": {
+            "headline": "<a href='#historie4' target='_self' style='text-decoration:none;color: black;'>Kate Sheppard</a>"
+        }
+    },
+    {
+        "media": {
+            "url": "img/historie/prvni.jpg",
+            "alt": "První světová válka",
+            "link": "#historie5",
+            "link_target": "_self"
+        },
+        "start_date": {
+            "year": "1914",
+            "month": "7",
+            "day": "28"
+        },
+        "end_date": {
+            "year": "1918",
+            "month": "11",
+            "day": "11"
+        },
+        "text": {
+            "headline": "<a href='#historie5' target='_self' style='text-decoration:none;color: black;'>První světová válka</a>"
+        }
+    }]
+}
