@@ -1,10 +1,10 @@
 const path = require('path');
 const http = require('http');
 const express = require('express');
-const fs = require('fs').promises;
+const fs = require('fs');
 
 async function readJSON(path){
-    const data = await fs.readFile(path)
+    const data = await fs.promises.readFile(path)
     .catch(err => console.error('Chyba načtení souboru: ', err));
     return JSON.parse(data.toString());
 }
@@ -16,6 +16,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/api/events', (req, res) => {
     readJSON('/data/historie.json')
+    .then(data => res.send(data))
+    .catch(err => res.send('Chyba lávky', err));
+});
+
+app.get('/api/events', (req, res) => {
+    readJSON('data/map.json')
     .then(data => res.send(data))
     .catch(err => res.send('Chyba lávky', err));
 });

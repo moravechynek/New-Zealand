@@ -1,0 +1,42 @@
+{
+    "fiordlandNationalPark": [{
+        "headline": "Fiordland National Park",
+        "image": "../public/img/map/1.jpeg",
+        "text": "bla"
+    }],
+    "bayOfIslands": [{
+        "headline": "Bay of Islands",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "queenstown": [{
+        "headline": "Queenstown",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "lakeTaupo": [{
+        "headline": "Lake Taupo",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "rotorua": [{
+        "headline": "Rotorua",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "foxAndFranzJosefGlaciers": [{
+        "headline": "Fox and Franz Josef Glaciers",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "abelTasmanCoast": [{
+        "headline": "Abel Tasman Coast",
+        "image": "bla",
+        "text": "bla"
+    }],
+    "aoraki": [{
+        "headline": "Aoraki",
+        "image": "bla",
+        "text": "bla"
+    }]
+}

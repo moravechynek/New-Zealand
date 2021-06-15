@@ -182,6 +182,7 @@ $(document).ready(function(){
   $("#auckland_islands").mouseout(function(){
     $("#auckland_islands").attr("fill","#7c7c7c");
   });
+  
   /*
     $("p").mouseenter(function(){
     $(this).hide();
